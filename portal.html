@@ -1,0 +1,330 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>C2 Technologies, Inc. Product Portal</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+
+        function openLink(link) {
+            window.location.href = link;
+        }
+
+    </script>
+    
+    <style>
+
+        @font-face {
+            font-family: "Roboto-Bold";
+            src: url("fonts/Roboto-Bold.ttf") format("truetype");
+        }
+
+        @font-face {
+            font-family: "Roboto-Regular";
+            src: url("fonts/Roboto-Regular.ttf") format("truetype");
+        }
+
+        @font-face {
+            font-family: "Roboto-Light";
+            src: url("fonts/Roboto-Light.ttf") format("truetype");
+        }
+
+        .banner {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .banner_lg {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            background-image: url("images/banner.jpg");
+            background-color: rgba(246, 248, 248, 1);
+            height: 400px;
+            width: 100%;
+            display: table; 
+            overflow: hidden;
+        }
+
+        .banner_text {
+            text-align: center;
+            display: table-cell; 
+            vertical-align: middle;
+        }
+
+        .page_contents {
+            background-color: rgba(246, 248, 248, 1);
+            margin-top: 0px;
+        }
+
+        .page_header {
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        .panel_left {
+            height: 150px;
+            width: 90%;
+            background-color: rgba(255, 255, 255, 1);
+            border-radius: 7px;
+            box-shadow: 1px 2px 0px 0px rgba(7, 7, 7, 0.13);
+            float: right;
+            margin-right: 5px;
+            margin-bottom: 30px;
+        }
+
+        .panel_left:hover {
+            background-color: rgba(235, 243, 251, 1);
+            cursor: pointer;
+        }
+
+        .panel_right {
+            height: 150px;
+            width: 90%;
+            background-color: rgba(255, 255, 255, 1);
+            border-radius: 7px;
+            box-shadow: 1px 2px 0px 0px rgba(7, 7, 7, 0.13);
+            float: left;
+            margin-left: 5px;
+            margin-bottom: 30px;
+        }
+
+        @media (max-width: 768px) {
+            /* center for xs size */
+            .panel_left {
+                float: left;
+                margin-left: 5%;
+            }
+
+            .panel_right {
+                float: right;
+                margin-right: 5%;
+            }
+        }
+
+        .panel_right:hover {
+            background-color: rgba(235, 243, 251, 1);
+            cursor: pointer;
+        }
+
+        .image_holder {
+            margin: 25px 20px 20px 25px;
+            float: left;
+        }
+
+        .text_holder {
+            margin-top: 45px;
+            padding-right: 10px;
+        }
+
+        h1 {
+            font-family: Roboto-Bold;
+            font-size: 48px;
+            color: rgba(255, 255, 255, 1);
+            margin-top: 0px;
+            margin-bottom: 30px;
+        }
+
+        @media (max-width: 991px) {
+            h1 {
+                font-size: 40px;
+            }
+        }
+
+        h2 {
+            font-family: Roboto-Regular;
+            font-size: 24px;
+            color: rgba(255, 255, 255, 1);
+        }
+
+        h3 {
+            font-family: Roboto-Light;
+            font-size: 32px;
+            color: rgba(54, 54, 54, 1);
+            margin-top: 0px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-family: Roboto-Light;
+            font-size: 16px;
+            color: rgba(54, 54, 54, 1);
+        }
+
+        h4 {
+            font-family: Roboto-Light;
+            font-size: 24px;
+            color: rgba(18, 119, 191, 1);
+        }
+
+        h5 {
+            font-family: Roboto-Light;
+            font-size: 14px;
+            color: rgba(9, 9, 9, 1);
+        }
+
+        @media (min-width: 768px) and (max-width: 991px) {
+            h4 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="banner">
+                    <img src="images/c2_banner_logo.png" alt="C<sup>2</sup> Technologies, Inc." width="254">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="banner_lg">
+                    <div class="banner_text">
+                        <h1>Welcome to the C<sup>2</sup> Technologies, Inc.<br />Software Technology Portal</h1>
+                        <h2>Some blurb about technology innovation.</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page_contents">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="page_header">
+                        <h3>Explore Our Products</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                        <p>tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="panel_left" onclick="openLink('https://myato.c2ti.com')">
+                        <div class="image_holder">
+                            <img src="images/faa_logo.png" alt="Federal Aviation Administration" />
+                        </div>
+                        <div class="text_holder">
+                            <h4>FAA Career Planning Tool 1.1</h4>
+                            <h5>Updated 10/25/2016</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="panel_right" onclick="openLink('https://myato.c2ti.com/atocpt2/#/')">
+                        <div class="image_holder">
+                            <img src="images/faa_logo.png" alt="Federal Aviation Administration" />
+                        </div>
+                        <div class="text_holder">
+                            <h4>FAA Career Planning Tool 2.0</h4>
+                            <h5>Updated 3/29/2017</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="panel_left" onclick="openLink('https://myato.c2ti.com/spt')">
+                        <div class="image_holder">
+                            <img src="images/faa_logo.png" alt="Federal Aviation Administration" />
+                        </div>
+                        <div class="text_holder">
+                            <h4>FAA Succession Planning Tool</h4>
+                            <h5>Updated 2/27/2017</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="panel_right" onclick="openLink('https://prod.c2ti.com/FAAVLP')">
+                        <div class="image_holder">
+                            <img src="images/faa_logo.png" alt="Federal Aviation Administration" />
+                        </div>
+                        <div class="text_holder">
+                            <h4>FAA ATO Virtual Learning Portal</h4>
+                            <h5>Updated 4/7/2017</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="panel_left" onclick="openLink('https://prod.c2ti.com/C2LearningPlan/')">
+                        <div class="image_holder">
+                            <img src="images/c2_logo.png" alt="C<sup>2</sup> Technologies, Inc." />
+                        </div>
+                        <div class="text_holder">
+                            <h4>C<sup>2</sup> Learning Plan Tool</h4>
+                            <h5>Updated 4/18/2017</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="panel_right" onclick="openLink('https://c2cpt.c2ti.com/#/')">
+                        <div class="image_holder">
+                            <img src="images/c2_logo.png" alt="C<sup>2</sup> Technologies, Inc." />
+                        </div>
+                        <div class="text_holder">
+                            <h4>C<sup>2</sup> Career Path Tool</h4>
+                            <h5>Updated 5/6/2016</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="panel_left" onclick="openLink('https://prod.c2ti.com/MarriottLearningGuide')">
+                        <div class="image_holder">
+                            <img src="images/marriott_logo.png" alt="Marriott" />
+                        </div>
+                        <div class="text_holder">
+                            <h4>Marriott Learning Guide</h4>
+                            <h5>Updated 2/27/2014</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="panel_right" onclick="openLink('https://prod.c2ti.com/MarriottLearningPlan')">
+                        <div class="image_holder">
+                            <img src="images/marriott_logo.png" alt="Marriott" />
+                        </div>
+                        <div class="text_holder">
+                            <h4>Marriott Build A Learning Plan</h4>
+                            <h5>Updated 5/23/2016</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="panel_left" onclick="openLink('https://prod.c2ti.com/NICVC_Dev')">
+                        <div class="image_holder">
+                            <img src="images/nic_logo.png" alt="National Institute of Corrections" />
+                        </div>
+                        <div class="text_holder">
+                            <h4>NIC Virtual Conference 2016</h4>
+                            <h5>Updated 11/3/2016</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="panel_right" onclick="openLink('https://femacpt.c2ti.com/')">
+                        <div class="image_holder">
+                            <img src="images/fema_logo.png" alt="Federal Emergency Management Agency" />
+                        </div>
+                        <div class="text_holder">
+                            <h4>FEMA Career Path Tool</h4>
+                            <h5>Updated 3/14/2017</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
